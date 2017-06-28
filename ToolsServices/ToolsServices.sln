@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsServices", "ToolsServices\ToolsServices.csproj", "{9C54F7BB-6228-42BA-B20F-0A564C51A732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestToolsServices", "UnitTestToolsServices\UnitTestToolsServices.csproj", "{CEECA0F9-2A5F-4C68-B65D-EB845EF2FE96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C54F7BB-6228-42BA-B20F-0A564C51A732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C54F7BB-6228-42BA-B20F-0A564C51A732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C54F7BB-6228-42BA-B20F-0A564C51A732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C54F7BB-6228-42BA-B20F-0A564C51A732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEECA0F9-2A5F-4C68-B65D-EB845EF2FE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEECA0F9-2A5F-4C68-B65D-EB845EF2FE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEECA0F9-2A5F-4C68-B65D-EB845EF2FE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEECA0F9-2A5F-4C68-B65D-EB845EF2FE96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

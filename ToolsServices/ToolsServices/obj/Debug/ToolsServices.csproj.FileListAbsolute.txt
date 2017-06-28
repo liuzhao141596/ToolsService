@@ -1,0 +1,11 @@
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\bin\Debug\ToolsServices.exe.config
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\bin\Debug\ToolsServices.exe
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\bin\Debug\ToolsServices.pdb
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\bin\Debug\Castle.Core.dll
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\bin\Debug\Ploeh.AutoFixture.dll
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\bin\Debug\UnitTestGenerator.dll
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\bin\Debug\Castle.Core.xml
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\bin\Debug\Ploeh.AutoFixture.xml
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\obj\Debug\ToolsServices.csprojResolveAssemblyReference.cache
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\obj\Debug\ToolsServices.exe
+D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\obj\Debug\ToolsServices.pdb

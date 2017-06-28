@@ -1,0 +1,8 @@
+D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\bin\Debug\UnitTestToolsServices.dll.config
+D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\bin\Debug\UnitTestToolsServices.dll
+D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\bin\Debug\UnitTestToolsServices.pdb
+D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\bin\Debug\ToolsServices.exe
+D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\bin\Debug\ToolsServices.pdb
+D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\obj\Debug\UnitTestToolsServices.csprojResolveAssemblyReference.cache
+D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\obj\Debug\UnitTestToolsServices.dll
+D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\obj\Debug\UnitTestToolsServices.pdb
