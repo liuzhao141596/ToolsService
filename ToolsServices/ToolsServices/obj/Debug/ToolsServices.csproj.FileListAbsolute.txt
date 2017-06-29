@@ -9,3 +9,6 @@ D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\bin\Debug\Ploeh.AutoFix
 D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\obj\Debug\ToolsServices.csprojResolveAssemblyReference.cache
 D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\obj\Debug\ToolsServices.exe
 D:\fangyoucode\ToolsServices\ToolsServices\ToolsServices\obj\Debug\ToolsServices.pdb
+D:\Code\Publish\ToolService\ToolsServices\ToolsServices\bin\Debug\ToolsServices.exe.config
+D:\Code\Publish\ToolService\ToolsServices\ToolsServices\obj\Debug\ToolsServices.exe
+D:\Code\Publish\ToolService\ToolsServices\ToolsServices\obj\Debug\ToolsServices.pdb
