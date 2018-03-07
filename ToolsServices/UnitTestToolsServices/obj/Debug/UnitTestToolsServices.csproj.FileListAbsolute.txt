@@ -6,3 +6,14 @@ D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\bin\Debug\Tools
 D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\obj\Debug\UnitTestToolsServices.csprojResolveAssemblyReference.cache
 D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\obj\Debug\UnitTestToolsServices.dll
 D:\fangyoucode\ToolsServices\ToolsServices\UnitTestToolsServices\obj\Debug\UnitTestToolsServices.pdb
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\obj\Debug\UnitTestToolsServices.csprojResolveAssemblyReference.cache
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\obj\Debug\UnitTestToolsServices.dll
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\obj\Debug\UnitTestToolsServices.pdb
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\bin\Debug\UnitTestToolsServices.dll.config
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\bin\Debug\UnitTestToolsServices.dll
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\bin\Debug\UnitTestToolsServices.pdb
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\bin\Debug\ToolsServices.exe
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\bin\Debug\ToolsServices.pdb
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\bin\Debug\ToolsServices.exe.config
+D:\Code\Publish\ToolService\ToolsServices\UnitTestToolsServices\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll

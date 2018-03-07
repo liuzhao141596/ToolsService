@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ToolsServices;
 
 namespace UnitTestToolsServices
 {
@@ -7,9 +8,10 @@ namespace UnitTestToolsServices
     public class UnitTestToolsServices
     {
         [TestMethod]
-        public void TestMethod1()
+        public void GetLeftStringTest()
         {
-
+            string leftString = StringManage.GetLeftString("kjshdfuiyh223的客服接口", 10);
+            string RightString = StringManage.GetRightString("kjshdfuiyh223的客服接口", 10);
         }
     }
 }
