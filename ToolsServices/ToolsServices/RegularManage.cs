@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ToolsServices
 {
     /// <summary>
-    /// Json相关扩展方法。
+    /// 正则匹配相关扩展方法。
     /// 
     /// 修改纪录
     /// 

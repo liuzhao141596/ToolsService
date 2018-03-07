@@ -52,16 +52,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnumDescriptionTools.cs" />
+    <Compile Include="EnumManages.cs" />
     <Compile Include="GZipCompress.cs" />
     <Compile Include="JsonUtil.cs" />
     <Compile Include="ListDataTable.cs" />
+    <Compile Include="ListManage.cs" />
     <Compile Include="NumericConversion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegularManage.cs" />
     <Compile Include="StringManage.cs" />
-    <Compile Include="Tools\ToolsServicesList.cs" />
     <Compile Include="TypeConversion.cs" />
   </ItemGroup>
   <ItemGroup>

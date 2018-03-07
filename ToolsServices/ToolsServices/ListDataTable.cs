@@ -6,6 +6,18 @@ using System.Reflection;
 
 namespace ToolsServices
 {
+    /// <summary>
+    /// List集合和DataTable转换 相关扩展方法。
+    /// 
+    /// 修改纪录
+    /// 
+    /// 2018-03-03 版本：1.2 liuzhaozhao 创建文件。
+    /// 
+    /// <author>
+    ///     <name>liuzhaozhao</name>
+    ///     <date>2018-03-03</date>
+    /// </author>
+    /// </summary>
     public static class ListDataTable
     {
         /// <summary>    
