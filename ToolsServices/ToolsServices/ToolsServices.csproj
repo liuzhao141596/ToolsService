@@ -59,6 +59,8 @@
     <Compile Include="NumericConversion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegularManage.cs" />
+    <Compile Include="StringManage.cs" />
     <Compile Include="Tools\ToolsServicesList.cs" />
     <Compile Include="TypeConversion.cs" />
   </ItemGroup>
