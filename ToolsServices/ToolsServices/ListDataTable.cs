@@ -15,6 +15,7 @@ namespace ToolsServices
         /// <returns></returns>    
         public static DataTable ListToDataTable(IList list)
         {
+            
             DataTable result = new DataTable();
             if (list.Count > 0)
             {
@@ -47,8 +48,7 @@ namespace ToolsServices
 
         /// <summary>    
         /// DataTable 转换为List 集合    
-        /// </summary>    
-        /// <typeparam name="TResult">类型</typeparam>    
+        /// </summary>
         /// <param name="dt">DataTable</param>    
         /// <returns></returns>    
         public static List<T> DataTableToList<T>(DataTable dt) where T : class, new()
@@ -93,7 +93,6 @@ namespace ToolsServices
             if (dt.Rows.Count > 0)
             {
                 lists = new List<T>();//定义集合
-                string tempName = string.Empty;
                 for (int i = rowStart; i < dt.Rows.Count; i++)
                 {
                     DataRow myRow = dt.Rows[i];//获取当前行
@@ -102,7 +101,7 @@ namespace ToolsServices
                     Type type = t.GetType();
                     foreach (var pi in type.GetProperties())//遍历公共属性
                     {
-                        tempName = pi.Name;
+                        string tempName = pi.Name;
                         if (dt.Columns.Contains(tempName))
                         {
                             if (!pi.CanWrite) continue;//该属性不可写，直接跳出

@@ -165,11 +165,10 @@ namespace ToolsServices.Tools
         {
             decimal[] numArray = new decimal[beChangeArray.Length];
             int index = 0;
-            decimal result = 0M;
             foreach (string str in beChangeArray)
             {
                 numArray[index] = 0M;
-                result = 0M;
+                decimal result = 0M;
                 if (decimal.TryParse(str, out result))
                 {
                     numArray[index] = result;
@@ -187,11 +186,10 @@ namespace ToolsServices.Tools
         {
             int[] numArray = new int[beChangeArray.Length];
             int index = 0;
-            int result = 0;
             foreach (string str in beChangeArray)
             {
                 numArray[index] = 0;
-                result = 0;
+                int result = 0;
                 if (int.TryParse(str, out result))
                 {
                     numArray[index] = result;
@@ -207,7 +205,7 @@ namespace ToolsServices.Tools
         /// <returns></returns>
         public static int Convert36To10(string value)
         {
-            string dic = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const string dic = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             var result = value.Aggregate(0L, (sum, c) => sum * 36 + dic.IndexOf(c));
             return Convert.ToInt32(result);
         }

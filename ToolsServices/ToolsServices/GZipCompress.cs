@@ -38,7 +38,6 @@ namespace ToolsServices
         /// <returns></returns>
         public static byte[] Compress(byte[] data)
         {
-            byte[] bData;
             MemoryStream ms = new MemoryStream();
             GZipStream stream = new GZipStream(ms, CompressionMode.Compress, true);
             stream.Write(data, 0, data.Length);
@@ -46,7 +45,7 @@ namespace ToolsServices
             stream.Dispose();
             //必须把stream流关闭才能返回ms流数据,不然数据会不完整
             //并且解压缩方法stream.Read(buffer, 0, buffer.Length)时会返回0
-            bData = ms.ToArray();
+            byte[] bData = ms.ToArray();
             ms.Close();
             ms.Dispose();
             return bData;

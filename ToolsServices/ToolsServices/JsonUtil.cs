@@ -1,4 +1,6 @@
-﻿using System.Web.Script.Serialization;
+﻿using System.Collections.Generic;
+using System.Text;
+using System.Web.Script.Serialization;
 
 namespace ToolsServices
 {
@@ -17,7 +19,7 @@ namespace ToolsServices
 
     public static class JsonUtil
     {
-        static JavaScriptSerializer serializer = new JavaScriptSerializer();
+        static readonly JavaScriptSerializer Serializer = new JavaScriptSerializer();
         #region Json扩展
         /// <summary>
         /// 将对象转换为Json字串。
@@ -36,7 +38,7 @@ namespace ToolsServices
             else
             {
                 //StringExtensions.ToJson(obj); 这个不可以 解析嵌套类
-                result = serializer.Serialize(obj);
+                result = Serializer.Serialize(obj);
             }
 
             return result;
@@ -51,9 +53,55 @@ namespace ToolsServices
         public static T FromJson<T>(this string json)
         {
             //return StringExtensions.FromJson<T>(json);  这个不可以 解析嵌套类
-            return serializer.Deserialize<T>(json);
+            return Serializer.Deserialize<T>(json);
         }
         #endregion
 
+
+        /// <summary>
+        /// 集合Json字符串转化为字符串集合
+        /// </summary>
+        /// <param name="rawjson"></param>
+        /// <returns></returns>
+        public static List<string> JsonStringCollection(string rawjson)
+        {
+            var list = new List<string>();
+
+            if (string.IsNullOrEmpty(rawjson))
+                return list;
+
+            rawjson = rawjson.Trim();
+            var builder = new StringBuilder();
+            int nestlevel = -1;
+            int mnestlevel = -1;
+            for (int i = 0; i < rawjson.Length; i++)
+            {
+                if (i == 0)
+                    continue;
+                if (i == rawjson.Length - 1)
+                    continue;
+                char jsonchar = rawjson[i];
+                if (jsonchar == '{')
+                    nestlevel++;
+                if (jsonchar == '}')
+                    nestlevel--;
+                if (jsonchar == '[')
+                    mnestlevel++;
+                if (jsonchar == ']')
+                    mnestlevel--;
+                if (jsonchar == ',' && nestlevel == -1 && mnestlevel == -1)
+                {
+                    list.Add(builder.ToString());
+                    builder = new StringBuilder();
+                }
+                else
+                    builder.Append(jsonchar);
+            }
+
+            if (builder.Length > 0)
+                list.Add(builder.ToString());
+
+            return list;
+        }
     }
 }

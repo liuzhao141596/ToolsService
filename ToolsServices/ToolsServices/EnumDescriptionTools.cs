@@ -23,22 +23,14 @@ namespace ToolsServices
             Type enumType = value.GetType();
             // 获取枚举常数名称。
             string name = System.Enum.GetName(enumType, value);
-            if (name != null)
-            {
-                // 获取枚举字段。
-                FieldInfo fieldInfo = enumType.GetField(name);
-                if (fieldInfo != null)
-                {
-                    // 获取描述的属性。
-                    DescriptionAttribute attr = Attribute.GetCustomAttribute(fieldInfo, 
-                        typeof(DescriptionAttribute), false) as DescriptionAttribute;
-                    if (attr != null)
-                    {
-                        return attr.Description;
-                    }
-                }
-            }
-            return null;
+            if (name == null) return null;
+            // 获取枚举字段。
+            FieldInfo fieldInfo = enumType.GetField(name);
+            if (fieldInfo == null) return null;
+            // 获取描述的属性。
+            DescriptionAttribute attr = Attribute.GetCustomAttribute(fieldInfo, 
+                typeof(DescriptionAttribute), false) as DescriptionAttribute;
+            return attr != null ? attr.Description : null;
         }
     }
 }
