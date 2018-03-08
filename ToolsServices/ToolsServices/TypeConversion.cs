@@ -119,5 +119,53 @@ namespace ToolsServices
             Array.Reverse(c);
             return new string(c);
         }
+
+        /// <summary>
+        /// 将字符串转换为整型类型
+        /// </summary>
+        /// <param name="intValue"></param>
+        /// <param name="defaultValue"></param>
+        /// <returns></returns>
+        public static int ToInt(this string intValue, int defaultValue = 0)
+        {
+            var parseResult = 0;
+            return int.TryParse(intValue, out parseResult) ? parseResult : defaultValue;
+        }
+
+
+        /// <summary>
+        /// 将字符串转换为浮点类型
+        /// </summary>
+        /// <param name="decimalValue"></param>
+        /// <param name="defaultValue"></param>
+        /// <returns></returns>
+        public static decimal ToDecimal(this string decimalValue, decimal defaultValue = 0M)
+        {
+            var parseResult = 0M;
+            return decimal.TryParse(decimalValue, out parseResult) ? parseResult : defaultValue;
+        }
+
+        /// <summary>
+        /// 将字符串转换为GUID类型
+        /// </summary>
+        /// <param name="guidValue">需要转换的字符串</param>
+        /// <param name="defaultValue">转换不成功的默认值</param>
+        /// <returns></returns>
+        public static Guid ToGuid(this string guidValue, Guid? defaultValue = null)
+        {
+            var parseResult = Guid.Empty;
+            try
+            {
+                parseResult = new Guid(guidValue);
+            }
+            catch
+            {
+                if (defaultValue.HasValue)
+                {
+                    parseResult = defaultValue.Value;
+                }
+            }
+            return parseResult;
+        }
     }
 }

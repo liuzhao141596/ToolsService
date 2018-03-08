@@ -18,7 +18,9 @@ namespace ToolsServices
     ///     <date>2018-03-07</date>
     /// </author>
     /// </summary>
-    class TokenManage
+    public static class TokenManage
     {
+
+
     }
 }
